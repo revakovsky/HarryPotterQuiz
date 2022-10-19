@@ -1,15 +1,12 @@
 package com.revakovskyi.harrypotterquiz.view
 
-import android.app.Activity
-import android.content.Context
 import android.os.Bundle
-import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.revakovskyi.harrypotterquiz.R
 import com.revakovskyi.harrypotterquiz.databinding.ActivityMainBinding
-import com.revakovskyi.harrypotterquiz.hideSoftInput
-import com.revakovskyi.harrypotterquiz.makeToast
+import com.revakovskyi.harrypotterquiz.utils.hideSoftInput
+import com.revakovskyi.harrypotterquiz.utils.makeToast
 
 class MainActivity : AppCompatActivity() {
 
