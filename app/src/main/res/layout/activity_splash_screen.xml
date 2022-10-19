@@ -10,28 +10,25 @@
 
     <TextView
         android:id="@+id/splash_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/TextView"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="200dp"
-        android:fontFamily="@font/harry_potter"
+        android:letterSpacing="0"
+        android:shadowColor="@color/base_secondary_darker"
+        android:shadowRadius="30"
         android:text="@string/harry_potter"
         android:textColor="@color/white"
-        android:shadowColor="@color/black"
-        android:shadowRadius="10"
         android:textSize="100sp" />
 
     <TextView
         android:id="@+id/quiz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/TextView"
         android:layout_gravity="center_horizontal"
-        android:fontFamily="@font/harry_potter"
+        android:letterSpacing="0.02"
+        android:shadowColor="@color/base"
+        android:shadowRadius="30"
         android:text="@string/quiz"
         android:textColor="@color/base_secondary"
-        android:shadowColor="@color/black"
-        android:letterSpacing="0.02"
-        android:shadowRadius="10"
         android:textSize="80sp" />
 
     <ProgressBar

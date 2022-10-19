@@ -1,10 +1,14 @@
 package com.revakovskyi.harrypotterquiz.view
 
+import android.app.Activity
+import android.content.Context
 import android.os.Bundle
+import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.revakovskyi.harrypotterquiz.R
 import com.revakovskyi.harrypotterquiz.databinding.ActivityMainBinding
+import com.revakovskyi.harrypotterquiz.hideSoftInput
 import com.revakovskyi.harrypotterquiz.makeToast
 
 class MainActivity : AppCompatActivity() {
@@ -22,7 +26,10 @@ class MainActivity : AppCompatActivity() {
 
                 if (name.isNullOrBlank()) makeToast(R.string.enter_your_name)
 
-                else showFragment(QuestionsFragment(), false)
+                else {
+                    showFragment(QuestionsFragment(), false)
+                    binding.mainButtonStart.hideSoftInput()
+                }
             }
         }
     }

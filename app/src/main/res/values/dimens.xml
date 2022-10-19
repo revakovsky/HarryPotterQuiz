@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="margin_regular">16dp</dimen>
+    <dimen name="margin_regular_16dp">16dp</dimen>
+    <dimen name="margin_smaller_12dp">12dp</dimen>
+    <dimen name="margin_bigger_20dp">20dp</dimen>
+
+    <dimen name="padding_small_3dp">3dp</dimen>
+
+    <dimen name="card_elevation_5dp">5dp</dimen>
+    <dimen name="card_radius_8dp">8dp</dimen>
 
 
     <dimen name="text_regular_24sp">24sp</dimen>

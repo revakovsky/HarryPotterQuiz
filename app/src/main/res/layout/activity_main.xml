@@ -16,12 +16,9 @@
 
         <TextView
             android:id="@+id/app_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/harry_potter"
-            android:letterSpacing="0.02"
-            android:shadowColor="@color/black"
-            android:shadowRadius="10"
+            style="@style/TextView"
+            android:shadowColor="@color/base_darker"
+            android:shadowRadius="30"
             android:text="@string/app_name"
             android:textColor="@color/white"
             android:textSize="48sp" />
@@ -31,8 +28,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="30dp"
             android:background="@color/white"
-            android:elevation="5dp"
-            app:cardCornerRadius="8dp">
+            android:elevation="@dimen/card_elevation_5dp"
+            app:cardCornerRadius="@dimen/card_radius_8dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -43,15 +40,13 @@
 
                 <TextView
                     style="@style/TextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/welcome"
-                    android:textColor="@color/base_darker" />
+                    android:shadowColor="@color/base_lighter"
+                    android:shadowRadius="5"
+                    android:text="@string/welcome" />
 
                 <TextView
                     style="@style/TextView_hint"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_regular_16dp"
                     android:text="@string/enter_your_name"
                     android:textColor="@color/base" />
 
@@ -61,6 +56,7 @@
                     android:layout_height="wrap_content"
                     android:textColorHint="@color/gray"
                     app:boxStrokeColor="@color/base"
+                    app:boxStrokeWidth="2dp"
                     app:hintAnimationEnabled="true">
 
                     <androidx.appcompat.widget.AppCompatEditText
@@ -81,16 +77,8 @@
 
                 <Button
                     android:id="@+id/main_button_start"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/margin_regular"
-                    android:backgroundTint="@color/base_secondary"
-                    android:fontFamily="@font/harry_potter"
-                    android:letterSpacing="0.02"
-                    android:text="@string/start_quiz"
-                    android:textColor="@color/base_darker"
-                    android:textSize="@dimen/text_smaller_20sp"
-                    android:textStyle="bold" />
+                    style="@style/Button"
+                    android:text="@string/start_quiz" />
 
             </LinearLayout>
 
@@ -101,7 +89,7 @@
     <FrameLayout
         android:id="@+id/fragment_main_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
 </FrameLayout>
 
