@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen_image"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".view.SplashScreenActivity">
+
+    <TextView
+        android:id="@+id/splash_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/harry_potter"
+        android:text="@string/harry_potter"
+        android:textColor="@color/white"
+        android:shadowColor="@color/black"
+        android:shadowRadius="10"
+        android:textSize="100sp" />
+
+    <TextView
+        android:id="@+id/quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/harry_potter"
+        android:text="@string/quiz"
+        android:textColor="@color/base_secondary"
+        android:shadowColor="@color/black"
+        android:letterSpacing="0.02"
+        android:shadowRadius="10"
+        android:textSize="80sp" />
+
+    <ProgressBar
+        android:id="@+id/splash_progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:progressTint="@color/base_secondary" />
+
+</LinearLayout>
