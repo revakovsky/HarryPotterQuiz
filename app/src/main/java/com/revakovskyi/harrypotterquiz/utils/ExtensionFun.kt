@@ -11,6 +11,7 @@ fun AppCompatActivity.makeToast(textResource: Int) {
 }
 
 fun View.hideSoftInput() {
-    val inputMethodManager = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+    val inputMethodManager =
+        context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
     inputMethodManager.hideSoftInputFromWindow(windowToken, 0)
 }

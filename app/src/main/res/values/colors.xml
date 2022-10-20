@@ -19,6 +19,7 @@
     <color name="gray">#8F8F8F</color>
     <color name="pink">#D438EF</color>
     <color name="orange">#FF9800</color>
-    <color name="transparent">#00FF9800</color>
+    <color name="green">#6DB11D</color>
+    <color name="red">#E43F33</color>
 
 </resources>

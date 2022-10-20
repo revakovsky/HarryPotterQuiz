@@ -2,8 +2,8 @@ package com.revakovskyi.harrypotterquiz.models
 
 data class QuestionModel(
     val questionId: Int,
-    val question: String,
-    val image: Int,
+    val questionTitle: String,
+    val banner: Int,
 
     val optionOne: String,
     val optionTwo: String,

@@ -66,8 +66,8 @@
                 android:layout_marginStart="@dimen/card_radius_8dp"
                 android:gravity="center_vertical"
                 android:padding="@dimen/card_elevation_5dp"
-                tools:text="1/7"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:text="1/7" />
 
         </LinearLayout>
 
@@ -92,7 +92,7 @@
             tools:text="@string/option1.4" />
 
         <Button
-            android:id="@+id/main_button_start"
+            android:id="@+id/submit_button"
             style="@style/Button"
             android:text="@string/submit" />
 

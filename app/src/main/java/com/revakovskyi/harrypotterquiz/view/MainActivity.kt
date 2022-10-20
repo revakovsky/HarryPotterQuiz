@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
             if (savedInstanceState == null) {
 
                 if (name.isNullOrBlank()) makeToast(R.string.enter_your_name)
-
                 else {
                     showFragment(QuestionsFragment(), false)
                     binding.mainButtonStart.hideSoftInput()

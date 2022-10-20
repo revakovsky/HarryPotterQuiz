@@ -60,10 +60,11 @@
 
     <style name="Text_Option" parent="Text_Title">
         <item name="android:textSize">@dimen/text_smaller_20sp</item>
+        <item name="android:textColor">@color/gray</item>
         <item name="android:letterSpacing">0.05</item>
     </style>
 
-    <style name="Text_Button" parent="Text_Option">
+    <style name="Text_Button" parent="Text_Title">
         <item name="android:textSize">@dimen/text_smaller_20sp</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:letterSpacing">0.05</item>
