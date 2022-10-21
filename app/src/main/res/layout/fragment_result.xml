@@ -41,7 +41,7 @@
         style="@style/Button"
         android:layout_marginTop="80dp"
         android:backgroundTint="@color/base"
-        android:text="@string/finish"
+        android:text="@string/start_over"
         android:textColor="@color/base_secondary_lighter" />
 
 </LinearLayout>
