@@ -2,7 +2,6 @@ package com.revakovskyi.harrypotterquiz.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
 import com.revakovskyi.harrypotterquiz.R
 import com.revakovskyi.harrypotterquiz.databinding.ActivityMainBinding
 import com.revakovskyi.harrypotterquiz.utils.hideSoftInput
@@ -18,35 +17,38 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val name = binding.mainNameText.text
+        userName = name.toString()
+
         binding.mainButtonStart.setOnClickListener {
             if (savedInstanceState == null) {
 
                 if (name.isNullOrBlank()) makeToast(R.string.enter_your_name)
                 else {
-                    showFragment(QuestionsFragment(), false)
+                    val questionsFragment = QuestionsFragment()
+
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragment_main_container, questionsFragment)
+                        .add(R.id.fragment_main_container, QuestionsFragment())
+                        .addToBackStack(questionsFragment.javaClass.simpleName)
+                        .commit()
+
                     binding.mainButtonStart.hideSoftInput()
                 }
             }
         }
     }
 
-    fun showFragment(fragment: Fragment, doReplaceFragment: Boolean) {
-        val transaction = supportFragmentManager.beginTransaction()
-        val container = R.id.fragment_main_container
+    override fun onBackPressed() {
+        val count = supportFragmentManager.backStackEntryCount
 
-        if (doReplaceFragment) {
-            transaction
-                .replace(container, fragment)
-        } else {
-            transaction
-                .add(container, fragment)
-                .addToBackStack(fragment.javaClass.simpleName)
-        }
-        transaction.commit()
+        if (count == 0) super.onBackPressed()
+        else supportFragmentManager.popBackStack()
+
     }
 
-    override fun onBackPressed() {
-        super.onBackPressed()
-        finishAffinity()
+    companion object {
+        lateinit var userName: String
+        const val TOTAL_QUESTIONS: String = "7"
+        lateinit var totalCorrectAnswers: String
     }
 }

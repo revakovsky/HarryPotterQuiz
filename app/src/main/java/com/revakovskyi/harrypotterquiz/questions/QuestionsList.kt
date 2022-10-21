@@ -2,7 +2,7 @@ package com.revakovskyi.harrypotterquiz.questions
 
 import android.content.Context
 import com.revakovskyi.harrypotterquiz.R
-import com.revakovskyi.harrypotterquiz.models.QuestionModel
+import com.revakovskyi.harrypotterquiz.questions.model.QuestionModel
 
 class QuestionsList(context: Context) {
 
@@ -94,5 +94,4 @@ class QuestionsList(context: Context) {
         questionsList.add(question7)
         return questionsList
     }
-
 }

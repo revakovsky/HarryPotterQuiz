@@ -11,9 +11,12 @@
         <entry key="..\:/Android/1. Projects/2. Learning projects/Android Basic/HarryPotterQuiz/app/src/main/res/drawable/selected_option_bg.xml" value="0.249" />
         <entry key="..\:/Android/1. Projects/2. Learning projects/Android Basic/HarryPotterQuiz/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Android/1. Projects/2. Learning projects/Android Basic/HarryPotterQuiz/app/src/main/res/layout/activity_question.xml" value="0.2609375" />
+        <entry key="..\:/Android/1. Projects/2. Learning projects/Android Basic/HarryPotterQuiz/app/src/main/res/layout/activity_result.xml" value="0.132" />
         <entry key="..\:/Android/1. Projects/2. Learning projects/Android Basic/HarryPotterQuiz/app/src/main/res/layout/activity_splash.xml" value="0.2" />
         <entry key="..\:/Android/1. Projects/2. Learning projects/Android Basic/HarryPotterQuiz/app/src/main/res/layout/activity_splash_screen.xml" value="0.2" />
-        <entry key="..\:/Android/1. Projects/2. Learning projects/Android Basic/HarryPotterQuiz/app/src/main/res/layout/fragment_quastions.xml" value="0.268" />
+        <entry key="..\:/Android/1. Projects/2. Learning projects/Android Basic/HarryPotterQuiz/app/src/main/res/layout/fragment_blank.xml" value="0.24320652173913043" />
+        <entry key="..\:/Android/1. Projects/2. Learning projects/Android Basic/HarryPotterQuiz/app/src/main/res/layout/fragment_quastions.xml" value="0.2" />
+        <entry key="..\:/Android/1. Projects/2. Learning projects/Android Basic/HarryPotterQuiz/app/src/main/res/layout/fragment_result.xml" value="0.2" />
         <entry key="..\:/Android/1. Projects/2. Learning projects/Android Basic/HarryPotterQuiz2/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Android/1. Projects/2. Learning projects/Android Basic/HarryPotterQuiz2/app/src/main/res/layout/activity_splash.xml" value="0.2" />
         <entry key="..\:/Android/1. Projects/2. Learning projects/Android Basic/HarryPotterQuiz2/app/src/main/res/layout/activity_splash_screen.xml" value="0.2" />

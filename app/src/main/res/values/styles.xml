@@ -8,6 +8,10 @@
         <item name="android:textAppearance">@style/Text</item>
     </style>
 
+    <style name="TextView_Result" parent="TextView">
+        <item name="android:textAppearance">@style/Text_Result</item>
+    </style>
+
     <style name="TextView_hint" parent="TextView">
         <item name="android:textAppearance">@style/Text_hint</item>
     </style>
@@ -45,6 +49,12 @@
         <item name="fontFamily">@font/harry_potter</item>
         <item name="android:textColor">@color/base_darker</item>
         <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="Text_Result" parent="Text">
+        <item name="android:shadowRadius">5</item>
+        <item name="android:shadowColor">@color/base_lighter</item>
+        <item name="textAllCaps">true</item>
     </style>
 
     <style name="Text_hint" parent="Text">

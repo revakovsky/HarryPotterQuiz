@@ -39,9 +39,7 @@
                 android:padding="16dp">
 
                 <TextView
-                    style="@style/TextView"
-                    android:shadowColor="@color/base_lighter"
-                    android:shadowRadius="5"
+                    style="@style/TextView_Result"
                     android:text="@string/welcome" />
 
                 <TextView

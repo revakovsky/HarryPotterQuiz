@@ -1,4 +1,4 @@
-package com.revakovskyi.harrypotterquiz.models
+package com.revakovskyi.harrypotterquiz.questions.model
 
 data class QuestionModel(
     val questionId: Int,

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/result_fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/result_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_regular_16dp"
+    tools:context=".view.ResultFragment">
+
+    <TextView
+        style="@style/TextView_Result"
+        android:layout_marginTop="@dimen/margin_biggest_40dp"
+        android:text="@string/result" />
+
+    <TextView
+        style="@style/TextView_Result"
+        android:layout_marginTop="@dimen/margin_bigger_20dp"
+        android:text="@string/congratulations"
+        android:textSize="@dimen/text_big_32sp" />
+
+    <TextView
+        android:id="@+id/user_name"
+        style="@style/TextView_Title"
+        android:layout_marginTop="50dp"
+        android:text="@string/user_name"
+        android:textSize="@dimen/text_big_32sp" />
+
+    <TextView
+        android:id="@+id/score"
+        style="@style/TextView_Title"
+        android:layout_marginTop="@dimen/margin_smaller_12dp"
+        android:text="@string/your_score"
+        android:textColor="@color/base_lighter"
+        android:textSize="@dimen/text_regular_24sp" />
+
+    <Button
+        android:id="@+id/button_finish"
+        style="@style/Button"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/base"
+        android:text="@string/finish"
+        android:textColor="@color/base_secondary_lighter" />
+
+</LinearLayout>
