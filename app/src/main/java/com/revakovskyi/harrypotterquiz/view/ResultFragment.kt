@@ -18,9 +18,9 @@ class ResultFragment : Fragment() {
 
     private lateinit var userName: TextView
     private lateinit var score: TextView
-    private lateinit var buttonFinish: Button
+    private lateinit var startOverButton: Button
 
-    private val totalQuestion: String = "7"
+    private val totalQuestion: String = MainActivity.MAX_AMOUNT_OF_QUESTIONS.toString()
     private val totalCorrectAnswers: String = MainActivity.totalCorrectAnswers
 
     override fun onCreateView(
@@ -34,25 +34,32 @@ class ResultFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        this.makeToast(R.string.success)
-
         initViews()
+        setValues()
+
+        startOverButton.setOnClickListener {
+            startOver()
+        }
+    }
+
+    private fun startOver() {
+        activity?.let {
+            val intent = Intent(it, MainActivity::class.java)
+            it.startActivity(intent)
+            requireActivity().finishAffinity()
+        }
+    }
+
+    private fun setValues() {
+        this.makeToast(R.string.success)
         userName.text = MainActivity.userName.toString()
         score.text = "Your Score is $totalCorrectAnswers out of $totalQuestion"
-
-        buttonFinish.setOnClickListener {
-            activity?.let {
-                val intent = Intent(it, MainActivity::class.java)
-                it.startActivity(intent)
-                requireActivity().finishAffinity()
-            }
-        }
     }
 
     private fun initViews() {
         userName = binding.userName
         score = binding.score
-        buttonFinish = binding.buttonFinish
+        startOverButton = binding.startOverButton
     }
 
 }

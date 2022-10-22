@@ -1,10 +1,8 @@
 package com.revakovskyi.harrypotterquiz.view
 
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.text.Editable
-import android.util.Log
-import android.widget.EditText
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatEditText
 import com.revakovskyi.harrypotterquiz.R
@@ -16,7 +14,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var name: AppCompatEditText
-    private lateinit var name2: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,6 +51,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     companion object {
+        const val MAX_AMOUNT_OF_QUESTIONS = 7
         var userName: Editable? = null
         lateinit var totalCorrectAnswers: String
     }

@@ -37,7 +37,7 @@
         android:textSize="@dimen/text_regular_24sp" />
 
     <Button
-        android:id="@+id/button_finish"
+        android:id="@+id/start_over_button"
         style="@style/Button"
         android:layout_marginTop="80dp"
         android:backgroundTint="@color/base"

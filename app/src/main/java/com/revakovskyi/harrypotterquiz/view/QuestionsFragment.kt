@@ -41,7 +41,8 @@ class QuestionsFragment : Fragment() {
     private val choosingOption2 = 2
     private val choosingOption3 = 3
     private val choosingOption4 = 4
-    private val maxAmountOfQuestions = 7
+
+    private val maxAmountOfQuestions = MainActivity.MAX_AMOUNT_OF_QUESTIONS
 
     private var counter = 1
     private var rightChoice = 0
@@ -60,13 +61,13 @@ class QuestionsFragment : Fragment() {
 
         appearanceUtils = AppearanceUtils(requireActivity())
         initViews()
-        setQuestion()
+        createQuestion()
         optionsList = getOptionsList(fieldOption1, fieldOption2, fieldOption3, fieldOption4)
 
-        fieldOption1.setOnClickListener { selectedOptionFieldLook(fieldOption1, choosingOption1) }
-        fieldOption2.setOnClickListener { selectedOptionFieldLook(fieldOption2, choosingOption2) }
-        fieldOption3.setOnClickListener { selectedOptionFieldLook(fieldOption3, choosingOption3) }
-        fieldOption4.setOnClickListener { selectedOptionFieldLook(fieldOption4, choosingOption4) }
+        fieldOption1.setOnClickListener { selectedOptionLook(fieldOption1, choosingOption1) }
+        fieldOption2.setOnClickListener { selectedOptionLook(fieldOption2, choosingOption2) }
+        fieldOption3.setOnClickListener { selectedOptionLook(fieldOption3, choosingOption3) }
+        fieldOption4.setOnClickListener { selectedOptionLook(fieldOption4, choosingOption4) }
 
         binding.submitButton.setOnClickListener { setUpAction() }
     }
@@ -74,13 +75,12 @@ class QuestionsFragment : Fragment() {
     private fun setUpAction() {
         if (questionId != currentQuestionNumber) selectedOptionNumber = 0
 
-        if (selectedOptionNumber == 0) createNewQuestions()
-
-         else checkAnswer()
+        if (selectedOptionNumber == 0) showNewQuestions()
+        else checkAnswer()
     }
 
-    private fun createNewQuestions() {
-        setQuestion()
+    private fun showNewQuestions() {
+        createQuestion()
         appearanceUtils?.setDefaultOptionLook(optionsList)
         chooseButtonText()
 
@@ -103,7 +103,7 @@ class QuestionsFragment : Fragment() {
         selectedOptionNumber = 0
     }
 
-    private fun setQuestion() {
+    private fun createQuestion() {
         if (currentQuestionNumber == maxAmountOfQuestions + 1) showNextScreen()
 
         questionsList = QuestionsList(requireContext()).getQuestions()
@@ -167,7 +167,7 @@ class QuestionsFragment : Fragment() {
         progressText = binding.progressText
     }
 
-    private fun selectedOptionFieldLook(fieldOption: TextView, optionNumber: Int) {
+    private fun selectedOptionLook(fieldOption: TextView, optionNumber: Int) {
         appearanceUtils?.setDefaultOptionLook(optionsList)
         selectedOptionNumber = optionNumber
         appearanceUtils?.setStyle(fieldOption, R.drawable.selected_option_bg)
