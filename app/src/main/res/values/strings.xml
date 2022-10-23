@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Harry Potter Quiz</string>
+    <string name="harry_potter">Harry Potter</string>
+    <string name="quiz">Quiz</string>
+    <string name="welcome">Welcome</string>
+    <string name="enter_your_name">Please, enter your name</string>
+    <string name="name">Name</string>
+    <string name="start_quiz">Start quiz</string>
+    <string name="success">You have successfully completed the Quiz!</string>
+    <string name="finish">FINISH</string>
+    <string name="next_question">next question</string>
+    <string name="make_choice">Please, choose one option</string>
+
+    <!--    question1-->
+    <string name="question1">What were Harry Potter and his friends trying to find in the first book?</string>
+    <string name="option1.1">Golden diadem</string>
+    <string name="option1.2">Horcrux</string>
+    <string name="option1.3">Philosopher\'s Stone</string>
+    <string name="option1.4">Snitch</string>
+    <integer name="correct_answer1">3</integer>
+
+    <!--    question2-->
+    <string name="question2">What was this creature that turned people to stone when you looked into its eyes in the second Harry Potter book?</string>
+    <string name="option2.1">Obelisk</string>
+    <string name="option2.2">Basilisk</string>
+    <string name="option2.3">Dobby</string>
+    <string name="option2.4">Ghost</string>
+    <integer name="correct_answer2">2</integer>
+
+    <!--    question3-->
+    <string name="question3">Who was the prisoner from Azkaban to Harry Potter in the third part?</string>
+    <string name="option3.1">Brother</string>
+    <string name="option3.2">Father</string>
+    <string name="option3.3">Best friend</string>
+    <string name="option3.4">Godfather</string>
+    <integer name="correct_answer3">4</integer>
+
+    <!--    question4-->
+    <string name="question4">Where did the Goblet of Fire lead in the fourth Harry Potter book?</string>
+    <string name="option4.1">To the portal</string>
+    <string name="option4.2">To the locker room</string>
+    <string name="option4.3">To the Hogsmeade</string>
+    <string name="option4.4">To the bath</string>
+    <integer name="correct_answer4">1</integer>
+
+    <!--    question5-->
+    <string name="question5">Who created the Order of the Phoenix in the fifth Harry Potter book?</string>
+    <string name="option5.1">Albus Dumbledore</string>
+    <string name="option5.2">Joanne Rowling</string>
+    <string name="option5.3">Harry Potter</string>
+    <string name="option5.4">Draco Malfoy</string>
+    <integer name="correct_answer5">1</integer>
+
+    <!--    question6-->
+    <string name="question6">Who was the Half-Blood Prince in Harry Potter Book six?</string>
+    <string name="option6.1">Harry Potter</string>
+    <string name="option6.2">Albus Dumbledore</string>
+    <string name="option6.3">Severus Snape</string>
+    <string name="option6.4">Ron Weasley</string>
+    <integer name="correct_answer6">3</integer>
+
+    <!--    question7-->
+    <string name="question7">Which of the Deathly Hallows did Harry Potter originally have in book seven?</string>
+    <string name="option7.1">Resurrection stone</string>
+    <string name="option7.2">The cloak of invisibility</string>
+    <string name="option7.3">Elder wand</string>
+    <string name="option7.4">Opal necklace</string>
+    <string name="harry_potter_image">Harry Potter image</string>
+    <string name="submit">submit</string>
+    <integer name="correct_answer7">2</integer>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="result">result</string>
+    <string name="congratulations">congratulations !!!</string>
+    <string name="user_name">User name</string>
+    <string name="your_score">Your Score is 5 out of 7</string>
+    <string name="start_over">start over</string>
+
+</resources>

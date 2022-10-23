@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    TextView-->
+    <style name="TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/Text</item>
+    </style>
+
+    <style name="TextView_Result" parent="TextView">
+        <item name="android:textAppearance">@style/Text_Result</item>
+    </style>
+
+    <style name="TextView_hint" parent="TextView">
+        <item name="android:textAppearance">@style/Text_hint</item>
+    </style>
+
+    <style name="TextView_Title" parent="TextView">
+        <item name="android:textAppearance">@style/Text_Title</item>
+    </style>
+
+    <style name="TextView_Option" parent="TextView">
+        <item name="android:textAppearance">@style/Text_Option</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/option_bg</item>
+        <item name="android:layout_marginTop">@dimen/margin_smaller_12dp</item>
+        <item name="android:layout_marginStart">@dimen/margin_regular_16dp</item>
+        <item name="android:layout_marginEnd">@dimen/margin_regular_16dp</item>
+        <item name="android:padding">@dimen/margin_smaller_12dp</item>
+    </style>
+
+
+    <!--    Button-->
+    <style name="Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_regular_16dp</item>
+        <item name="android:backgroundTint">@color/base_secondary</item>
+        <item name="android:textAppearance">@style/Text_Button</item>
+        <item name="android:padding">@dimen/margin_regular_16dp</item>
+    </style>
+
+
+    <!--    Text-->
+    <style name="Text">
+        <item name="android:textSize">48sp</item>
+        <item name="fontFamily">@font/harry_potter</item>
+        <item name="android:textColor">@color/base_darker</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="Text_Result" parent="Text">
+        <item name="android:shadowRadius">5</item>
+        <item name="android:shadowColor">@color/base_lighter</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="Text_hint" parent="Text">
+        <item name="android:textSize">@dimen/text_regular_24sp</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="Text_Title" parent="Text">
+        <item name="android:textSize">@dimen/text_regular_24sp</item>
+        <item name="android:shadowColor">@color/base_darker</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="Text_Option" parent="Text_Title">
+        <item name="android:textSize">@dimen/text_smaller_20sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <style name="Text_Button" parent="Text_Title">
+        <item name="android:textSize">@dimen/text_smaller_20sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+</resources>
