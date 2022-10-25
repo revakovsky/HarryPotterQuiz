@@ -3,9 +3,14 @@ package com.revakovskyi.harrypotterquiz.view
 import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.view.View
+import android.webkit.ValueCallback
+import android.webkit.WebChromeClient
+import android.webkit.WebView
 import androidx.appcompat.app.AppCompatActivity
-import com.revakovskyi.harrypotterquiz.databinding.ActivitySplashScreenBinding
+import com.revakovskyi.harrypotterquiz.view.databinding.ActivitySplashScreenBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -16,7 +21,7 @@ class SplashScreenActivity : AppCompatActivity() {
 
     private val duration = SPLASH_SCREEN_DURATION
 
-    lateinit var binding: ActivitySplashScreenBinding
+    private lateinit var binding: ActivitySplashScreenBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

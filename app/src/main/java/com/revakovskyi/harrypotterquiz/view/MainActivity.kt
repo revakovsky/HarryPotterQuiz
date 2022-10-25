@@ -1,14 +1,12 @@
 package com.revakovskyi.harrypotterquiz.view
 
-import android.media.MediaPlayer
 import android.os.Bundle
 import android.text.Editable
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatEditText
-import com.revakovskyi.harrypotterquiz.R
-import com.revakovskyi.harrypotterquiz.databinding.ActivityMainBinding
 import com.revakovskyi.harrypotterquiz.utils.hideSoftInput
 import com.revakovskyi.harrypotterquiz.utils.makeToast
+import com.revakovskyi.harrypotterquiz.view.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

@@ -8,12 +8,11 @@ import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import com.revakovskyi.harrypotterquiz.R
-import com.revakovskyi.harrypotterquiz.databinding.FragmentQuastionsBinding
 import com.revakovskyi.harrypotterquiz.questions.QuestionsList
 import com.revakovskyi.harrypotterquiz.questions.model.QuestionModel
 import com.revakovskyi.harrypotterquiz.utils.AppearanceUtils
 import com.revakovskyi.harrypotterquiz.utils.makeToast
+import com.revakovskyi.harrypotterquiz.view.databinding.FragmentQuastionsBinding
 
 class QuestionsFragment : Fragment() {
 

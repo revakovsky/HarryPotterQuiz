@@ -4,7 +4,7 @@ import android.content.Context
 import android.graphics.drawable.Drawable
 import android.widget.TextView
 import androidx.core.content.res.ResourcesCompat
-import com.revakovskyi.harrypotterquiz.R
+import com.revakovskyi.harrypotterquiz.view.R
 
 class AppearanceUtils(private val context: Context) {
 

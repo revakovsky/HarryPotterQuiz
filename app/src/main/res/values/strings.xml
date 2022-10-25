@@ -3,13 +3,23 @@
     <string name="harry_potter">Harry Potter</string>
     <string name="quiz">Quiz</string>
     <string name="welcome">Welcome</string>
-    <string name="enter_your_name">Please, enter your name</string>
-    <string name="name">Name</string>
+
     <string name="start_quiz">Start quiz</string>
-    <string name="success">You have successfully completed the Quiz!</string>
     <string name="finish">FINISH</string>
+    <string name="result">result</string>
     <string name="next_question">next question</string>
     <string name="make_choice">Please, choose one option</string>
+    <string name="start_over">start over</string>
+    <string name="success">You have successfully completed the Quiz!</string>
+    <string name="congratulations">congratulations !!!</string>
+    <string name="your_score">Your Score is 5 out of 7</string>
+
+    <string name="enter_your_name">Please, enter your name</string>
+    <string name="name">Name</string>
+    <string name="user_name">User name</string>
+
+    <string name="link">https://www.google.com.ua/</string>
+
 
     <!--    question1-->
     <string name="question1">What were Harry Potter and his friends trying to find in the first book?</string>
@@ -68,12 +78,5 @@
     <string name="harry_potter_image">Harry Potter image</string>
     <string name="submit">submit</string>
     <integer name="correct_answer7">2</integer>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="result">result</string>
-    <string name="congratulations">congratulations !!!</string>
-    <string name="user_name">User name</string>
-    <string name="your_score">Your Score is 5 out of 7</string>
-    <string name="start_over">start over</string>
 
 </resources>

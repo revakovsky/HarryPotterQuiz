@@ -12,7 +12,7 @@
         android:fitsSystemWindows="true"
         android:gravity="center"
         android:orientation="vertical"
-        tools:context=".view.MainActivity">
+        tools:context=".MainActivity">
 
         <TextView
             android:id="@+id/app_name"

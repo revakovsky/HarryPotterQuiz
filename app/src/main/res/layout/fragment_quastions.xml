@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_question1"
     android:fillViewport="true"
-    tools:context=".view.QuestionsFragment">
+    tools:context=".QuestionsFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
