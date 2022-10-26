@@ -8,9 +8,8 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import com.revakovskyi.harrypotterquiz.R
-import com.revakovskyi.harrypotterquiz.databinding.FragmentResultBinding
 import com.revakovskyi.harrypotterquiz.utils.makeToast
+import com.revakovskyi.harrypotterquiz.view.databinding.FragmentResultBinding
 
 class ResultFragment : Fragment() {
 

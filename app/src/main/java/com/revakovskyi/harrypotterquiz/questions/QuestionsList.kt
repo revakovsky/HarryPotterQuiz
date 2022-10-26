@@ -1,8 +1,8 @@
 package com.revakovskyi.harrypotterquiz.questions
 
 import android.content.Context
-import com.revakovskyi.harrypotterquiz.R
 import com.revakovskyi.harrypotterquiz.questions.model.QuestionModel
+import com.revakovskyi.harrypotterquiz.view.R
 
 class QuestionsList(context: Context) {
 
